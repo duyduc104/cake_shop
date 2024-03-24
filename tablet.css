@@ -1,0 +1,494 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        position: relative;
+    }
+
+    .back-to-top {
+        width: 10%;
+        height: 8%;
+        opacity: 0.7;
+    }
+
+    .fixed-bottom1 {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+
+
+    .navbar {
+        background-color: #0dcaf0;
+        outline: none;
+    }
+
+    .navbar .nav-item {
+        padding: 0 20px;
+    }
+
+    .section2-img img {
+        width: 100%;
+
+    }
+
+    .section2 {
+        margin: 50px 0;
+    }
+
+    .section2 .section2-introduct span {
+        font-size: 30px;
+        font-weight: 600;
+
+    }
+
+    .section2 .section2-introduct h1 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .section2 .section2-introduct {
+        padding: 40px 0 30px 0;
+    }
+
+    .section2 .content-introduct b {
+        font-size: 35px;
+    }
+
+    .section2 .content-introduct p {
+        color: #656565;
+        font-size: 20px;
+    }
+
+    .section2 .content-benefit {
+        display: flex;
+
+    }
+
+    .section2 .content-benefit .heart {
+        padding-right: 20px;
+    }
+
+    .section2 .content-benefit .award-winning {
+        padding-left: 20px;
+    }
+
+    .section2 .content-benefit i {
+        font-size: 50px;
+    }
+
+    .section2 .content-benefit b {
+        font-size: 24px;
+    }
+
+    .section2 .content-benefit p {
+        color: #656565;
+        font-size: 18px;
+    }
+
+    .section3 {
+        width: 100%;
+        background: url(./img/bg.jpg) no-repeat;
+        margin: 50px 0;
+    }
+
+    .section3 .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .section3 .content {
+        padding: 10px;
+    }
+
+    .section3 .content i {
+        padding: 10px 30px 10px 0;
+        font-size: 30px;
+    }
+
+    .section3 .content b {
+        font-size: 20px;
+    }
+
+    .section3 .content p {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .section4 {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .section4 .title h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .section4 .title b {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .section4 .title-link {
+        background-color: #2B2825;
+        width: 100%;
+    }
+
+    .section4 .title-link a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        margin: 5%;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .section4 .title-link a:hover {
+        background-color: #E88F2A;
+        padding: 5px;
+    }
+
+    .section4 .content #tab-1 .detail {
+        padding: 10px;
+    }
+
+    .section4 .content #tab-1 img {
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+
+    .section4 .content #tab-1 h3 {
+        color: #E88F2A;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .section4 .content #tab-1 p {
+        color: gray;
+        font-size: 20px;
+    }
+
+    .section4 .content #tab-2 .detail {
+        padding: 10px;
+    }
+
+    .section4 .content #tab-2 img {
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+
+    .section4 .content #tab-2 h3 {
+        color: #E88F2A;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .section4 .content #tab-2 p {
+        color: gray;
+        font-size: 20px;
+    }
+
+    .section4 .content #tab-3 .detail {
+        padding: 10px;
+    }
+
+    .section4 .content #tab-3 img {
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+
+    .section4 .content #tab-3 h3 {
+        color: #E88F2A;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .section4 .content #tab-3 p {
+        color: gray;
+        font-size: 20px;
+    }
+
+    .section5 {
+        position: relative;
+        width: 100%;
+        background: url(./img/bg.jpg);
+    }
+
+    .section5 .section5-order span {
+        font-size: 50px;
+        color: red;
+    }
+
+    .section5 .section5-order button {
+        transition: 0.5s;
+        outline: none;
+        border: none;
+    }
+
+    .section5 .section5-order button:hover {
+        transform: scale(1.5);
+        opacity: 0.7;
+        background-color: #d83c3c;
+        outline: none;
+        border: none;
+    }
+
+    .section5 .order-form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        margin: 10px auto;
+        background-color: #d83c3c;
+        width: 100%;
+    }
+
+    .section5 .order-form .button-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        outline: none;
+        border: none;
+        transition: 0.5s;
+    }
+
+    .section5 .order-form .button-close :hover {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+
+    .section5 .order-form input {
+        margin: 5px auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section6 {
+        width: 100%;
+    }
+
+    .section6 .section6-member {
+        padding: 40px 0;
+    }
+
+    .section6 .section6-member .member {
+        width: 100%;
+        background-color: #2B2825;
+        border-radius: 10px;
+        margin: 30px 0;
+        position: relative;
+    }
+
+    .section6 .section6-member .member img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        cursor: pointer;
+    }
+
+    .section6 .section6-member .member h3 {
+        font-size: 40px;
+    }
+
+    .section6 .section6-member .member p {
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    .section6 .member .member-contact {
+        position: absolute;
+        top: 20%;
+        left: 45%;
+
+    }
+
+    .section6 .member .member-contact i {
+        color: #E88F2A;
+        font-size: 70px;
+        padding: 30px 0;
+        cursor: pointer;
+    }
+
+    .section7 {
+        width: 100%;
+        background: url(./img/bg.jpg);
+    }
+
+    .section7-introduct h3 {
+        font-size: 25px;
+    }
+
+    .section7-introduct h1 {
+        font-size: 40px;
+    }
+
+    .section7-introduct p {
+        font-size: 12px;
+        padding: 40px 0;
+    }
+
+    .section7-introduct button {
+        font-size: 20px;
+        font-weight: 600;
+        transition: 0.5s;
+    }
+
+    .section7-introduct button:hover {
+        transform: scale(0.8);
+        opacity: 0.7;
+        color: black;
+        background-color: white;
+    }
+
+    .section8 .container {
+        width: 100%;
+        background-color: #000000;
+        border-radius: 10px;
+    }
+
+    .section8 .progress {
+        height: 20%;
+    }
+
+    .section8 .progress-bar {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+        background-color: lightblue;
+        transition: 0.5;
+    }
+
+    /* 1 */
+    .progress #progress-bar1 {
+        width: 0%;
+        /* Initial width */
+        background-color: rgb(33, 180, 230);
+        /* Change color as needed */
+        animation: progressAnimation1 2s ease-in-out forwards;
+        /* Apply animation */
+    }
+
+    @keyframes progressAnimation1 {
+        0% {
+            width: 0%;
+        }
+
+        /* Start width */
+        100% {
+            width: 90%;
+        }
+
+        /* End width */
+    }
+
+    /* 2 */
+    .progress #progress-bar2 {
+        width: 0%;
+        /* Initial width */
+        background-color: rgb(33, 180, 230);
+        /* Change color as needed */
+        animation: progressAnimation2 2s ease-in-out forwards;
+        /* Apply animation */
+    }
+
+    @keyframes progressAnimation2 {
+        0% {
+            width: 0%;
+        }
+
+        /* Start width */
+        100% {
+            width: 80%;
+        }
+
+        /* End width */
+    }
+
+    /* 3 */
+    .progress #progress-bar3 {
+        width: 0%;
+        /* Initial width */
+        background-color: rgb(33, 180, 230);
+        /* Change color as needed */
+        animation: progressAnimation1 2s ease-in-out forwards;
+        /* Apply animation */
+    }
+
+    @keyframes progressAnimation3 {
+        0% {
+            width: 0%;
+        }
+
+        /* Start width */
+        100% {
+            width: 85%;
+        }
+
+        /* End width */
+    }
+
+    .section9 .section9-content-1 {
+        border-radius: 10px;
+    }
+
+    .section9 .section9-content-1 span {
+        font-size: 40px;
+    }
+
+    .section9 .section9-content-1 p {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .section9 .section9-content-2 span {
+        margin: 5px auto;
+    }
+
+    .section9 .section9-content-2 span i {
+        font-size: 30px;
+        padding: 13px;
+        color: #E88F2A;
+    }
+
+    .section9 .section9-content-2 span i:hover {
+        color: white;
+    }
+
+    .section9 .section9-content-3 a {
+        transition: 0.25s;
+        padding: 10px 0;
+    }
+
+    .section9 .section9-content-3 a:hover {
+        opacity: 0.7;
+        color: #E88F2A;
+    }
+
+    .section9 #footer2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .section9 .section9-content-4 button {
+        transition: 0.25s;
+    }
+
+    .section9 .section9-content-4 p {
+        font-size: 15px;
+    }
+
+    .section9 .section9-content-4 button:hover {
+        opacity: 0.7;
+        transform: scale(1.2);
+    }
+
+    .section9-content-5 {
+        background-color: black;
+        width: 100%;
+    }
+
+}

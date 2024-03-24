@@ -1,0 +1,11 @@
+.hidden {
+    display: none;
+}
+
+.non-show {
+    opacity: 0.5;
+}
+
+.show {
+    opacity: 1;
+}

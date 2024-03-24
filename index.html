@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-32x32.png">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="show.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="pc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+</head>
+</head>
+
+<body id="body">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-birthday-cake fs-1 text-primary me-3 text-danger"></i>
+                <span class="fs-1 fw-bold text-white">Cake Shop</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MENU & PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MASTER CHEFS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">PAGES
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Our Service</a></li>
+                            <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+                <button class="btn btn-danger"><a href="#">Purchase</a></button>
+            </div>
+        </div>
+    </nav>
+    <section class="section1 py-5">
+        <div class="container-fluid">
+            <div class="container py-5">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="font-secondary text-warning mb-4">Super Crispy</h1>
+                    <h1 class="display-1 text-uppercase text-white mb-4">CakeZone</h1>
+                    <h1 class="text-uppercase text-white">The Best Cake In London</h1>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="" class="btn btn-dark py-3 px-5 me-5" previewlistener="true">Read
+                            More</a>
+                        <a href="https://www.youtube.com/watch?v=ad5_MXzibSM" class="btn-play"><i
+                                class="fa fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2 container-fluid py-5">
+        <div class="container">
+            <div class="section2-introduct text-center text-dark">
+                <span class="text-warning">ABOUT US</span>
+                <h1>WELCOME TO CAKESHOP</h1>
+            </div>
+        </div>
+        <div class="container p-4">
+            <div class="section2-img">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/hero.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/offer.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/service.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="section2-content py-4">
+                <div class="content-introduct">
+                    <b class="text-dark">Tempor erat elitr rebum clita. Diam dolor diam ipsum erat lorem sed stet
+                        labore
+                        lorem sit clita
+                        duo</b>
+                    <p class="py-3">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit.
+                        Clita
+                        erat ipsum
+                        et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
+                        dolore erat amet magna
+
+                    </p>
+
+                </div>
+                <div class="content-benefit py-2">
+                    <div class="heart">
+                        <i class="fa fa-heartbeat fa-2x text-warning py-3"></i><br>
+                        <b class="text-dark">
+                            100% HEALTHY
+                        </b>
+                        <p class="py-3">
+                            Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero
+                        </p>
+                    </div>
+                    <div class="award-winning">
+                        <i class="fa fa-award fa-2x text-warning py-3"></i><br>
+                        <b class="text-dark">
+                            AWARD WINNING
+                        </b>
+                        <p class="py-3">
+                            Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3 container-fluid py-5">
+        <div class="container">
+            <div class="content experience d-flex">
+                <i class="fa fa-star text-warning"></i>
+                <div>
+                    <b class="text-warning">OUR EXPERIENCE</b>
+                    <p id="experienceCount">500</p>
+                </div>
+            </div>
+            <div class="content specialist d-flex">
+                <i class="fa fa-users text-warning"></i>
+                <div>
+                    <b class="text-warning">CAKE SPECIALIST</b>
+                    <p>30</p>
+                </div>
+            </div>
+            <div class="content project d-flex">
+                <i class="fa fa-check text-warning"></i>
+                <div>
+                    <b class="text-warning">COMPLETE PROJECT</b>
+                    <p>12345</p>
+                </div>
+            </div>
+            <div class="content clients d-flex">
+                <i class="fa fa-mug-hot text-warning"></i>
+                <div>
+                    <b class="text-warning">HAPPY CLIENTS</b>
+                    <p>12345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4 container-fluid py-5">
+        <div class="title container text-center py-4">
+            <h3 class="text-warning">Menu & Pricing</h3>
+            <h1><b class="text-dark">EXPLORE OUR CAKES</b></h1>
+        </div>
+
+        <div class="title-link text-center">
+            <div class="container p-4">
+                <a href="#tab-1" class="tab-link" id="link-brithday">BIRTHDAY</a>
+                <a href="#tab-2" class="tab-link" id="link-wedding">WEDDING</a>
+                <a href="#tab-3" class="tab-link" id="link-custom">CUSTOM</a>
+            </div>
+        </div>
+        <div class="content">
+            <div id="tab-1" class="hidden">
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-2" class="hidden">
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-3" class="hidden">
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+                <div class="detail d-flex">
+                    <div>
+                        <img src="./img/cake-3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h3>BIRTHDAY CAKE</h3>
+                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section5 container-fluid py-5" id="section5">
+        <div class="container">
+            <div class="section5-order p-4 text-center text-white" id="section5-order">
+                <h3 class="fs-1 fw-border py-3"><span>30%</span> DISCOUNT FOR THIS SUMMER</h3>
+                <button onclick="btnOrder()" class="btn btn-warning text-dark fw-bold">Order Now</button>
+            </div>
+            <div class="order-form text-center hidden" id="order-form">
+                <h3 class="text-center text-warning fw-bold fs-1 ">Information</h3>
+                <button class="btn button-close" onclick="closeButton()">
+                    <i class="fa fa-times fs-1 text-white"></i>
+                </button>
+                <form method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="phone" class="form-control" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="address" class="form-control" placeholder="Your Address" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" onclick="submitButton()" class="btn btn-success text-dark fw-bold">Order
+                            Now</button>
+                        <button type="reset" class="btn btn-primary text-dark fw-bold">
+                            <i class="fa-sharp fa-solid fa-rotate-right"></i>
+                        </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="section6 container-fluid py-5">
+        <div class="container">
+            <div class="section6-introduct text-center text-dark">
+                <h3 class="text-warning">Team Member</h3>
+                <h1 class="fw-bold fs-1">THE MASTER CHEFS</h1>
+            </div>
+            <div class="section6-member text-center">
+                <div class="member">
+                    <img src="./img/team-1.jpg" alt="" id="img-chef1">
+                    <div class="member-contact hidden" id="member-contact1">
+                        <i class="fa-sharp fa-solid fa-phone"></i><br>
+                        <i class="fa-sharp fa-regular fa-comments"></i><br>
+                        <i class="fa-sharp fa-regular fa-address-card"></i>
+                    </div>
+                    <h3 class="text-warning py-2 fs-1">Full name</h3>
+                    <p>Designer</p>
+                </div>
+                <div class="member">
+                    <img src="./img/team-2.jpg" alt="" id="img-chef2">
+                    <div class="member-contact hidden" id="member-contact2">
+                        <i class="fa-sharp fa-solid fa-phone"></i><br>
+                        <i class="fa-sharp fa-regular fa-comments"></i><br>
+                        <i class="fa-sharp fa-regular fa-address-card"></i>
+                    </div>
+                    <h3 class="text-warning py-2 fs-1">Full name</h3>
+                    <p>Designer</p>
+                </div>
+                <div class="member">
+                    <img src="./img/team-3.jpg" alt="" id="img-chef3">
+                    <div class="member-contact hidden" id="member-contact3">
+                        <i class="fa-sharp fa-solid fa-phone"></i><br>
+                        <i class="fa-sharp fa-regular fa-comments"></i><br>
+                        <i class="fa-sharp fa-regular fa-address-card"></i>
+                    </div>
+                    <h3 class="text-warning py-2 fs-1">Full name</h3>
+                    <p>Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section7 container-fluid py-5">
+        <div class="container">
+            <div class="section7-introduct text-center">
+                <h3 class="text-warning py-3">Special Kombo Pack</h3>
+                <h1 class="fw-bold fs-1 ">SUPPER CRISPY CAKES</h1>
+                <P class="">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at
+                    dolor justo
+                    ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut
+                    dolores magna sit. Sea dolore sed et.</P>
+                <button class="btn btn-dark btn-outline-light ">Read Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="section8 container-fluid py-5">
+        <div class="container">
+            <div class="section8-introduct text-center py-3">
+                <h3 class="text-warning py-3">Feed Back</h3>
+            </div>
+            <div class="section8-content py-3">
+                <div class="py-3">
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar " id="progress-bar1" style="width: 0%">90%</div>
+                    </div>
+                </div>
+                <div class="py-3">
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white"></i>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" id="progress-bar2" style="width: 0%">80%</div>
+                    </div>
+                </div>
+                <div class="py-3">
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white"></i>
+                    <i class="fa-sharp fa-solid fa-star text-white"></i>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" id="progress-bar3" style="width: 0%">85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section9 container-fluid py-5 bg-dark">
+        <div class="container">
+            <div class="section9-content-1 bg-warning text-center py-5">
+                <a href="#">
+                    <i class="fa fa-birthday-cake fs-1 text-primary me-3 text-dark"></i>
+                    <span class="fw-bold text-white">Cake Shop</span>
+                </a>
+                <p>Lorem diam sit erat dolor elitr et, diam lorem justo labore amet clita labore stet eos magna sit.
+                    Elitr dolor eirmod duo tempor lorem, elitr clita ipsum sea. Nonumy rebum et takimata ea takimata
+                    amet gubergren, erat rebum magna lorem stet eos. Diam amet et kasd eos duo dolore no.</p>
+            </div>
+            <div id="footer2">
+                <div class="section9-content-2 py-5">
+                    <h3 class="fs-1 text-warning py-3 fw-bold">GET IN TOUCH</h3>
+                    <p><i class="fa-sharp fa-solid fa-location-dot text-warning me-3"></i> 123 Street, New York</p>
+                    <p><i class="fa-sharp fa-regular fa-envelope-open text-warning me-3"></i> pKx0H@example.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone text-warning me-3"></i> +012 345 67890</p>
+                    <span>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </span>
+                </div>
+                <div class="section9-content-3 py-3">
+                    <h3 class="fs-1 text-warning py-3 fw-bold">QUICK LINKS</h3>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Home</a></p>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> About Us</a></p>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Menu & Pricing</a>
+                    </p>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Master Chef</a></p>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Pages</a></p>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Contact</a></p>
+                </div>
+            </div>
+            <div class="section9-content-4 py-5 text-center">
+                <h3 class="text-warning py-3 fw-bold">NEWSLETTER</h3>
+                <p class="">Enter your email to get the latest news and offers.</p>
+                <form>
+                    <input type="email" name="" id="" placeholder="Email Address" class="w-100 text-dark">
+                    <button type="submit" onclick="btnOrder()" class="btn btn-warning mt-3"><a href="#section5">Order
+                            Now</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="section9-content-5 py-4 text-center container-fluid">
+        <p>
+        <Address>Copyright © <span><a class="text-warning" href="#">Cake Shop</a></span> All Rights Reserved
+        </Address>
+        </p>
+    </div>
+    <a href="#" class="btn btn-warning  py-3 fs-4 back-to-top fixed-bottom1" style="display: inline;">
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </a>
+    <script src="javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
