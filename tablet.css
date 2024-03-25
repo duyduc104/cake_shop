@@ -1,11 +1,11 @@
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1367px) {
     body {
         position: relative;
     }
 
     .back-to-top {
         width: 10%;
-        height: 8%;
+        height: 6%;
         opacity: 0.7;
     }
 
@@ -23,6 +23,18 @@
 
     .navbar .nav-item {
         padding: 0 20px;
+    }
+
+    .navbar-collapse .dropdown {
+        display: none;
+    }
+
+    .navbar-collapse form {
+        display: none;
+    }
+
+    .section1 .container-fuild {
+        padding: 30px 0;
     }
 
     .section2-img img {
@@ -311,6 +323,7 @@
         font-size: 70px;
         padding: 30px 0;
         cursor: pointer;
+        transition: 0.5s;
     }
 
     .section7 {

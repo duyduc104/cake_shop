@@ -42,48 +42,57 @@
 </head>
 
 <body id="body">
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <i class="fa fa-birthday-cake fs-1 text-primary me-3 text-danger"></i>
-                <span class="fs-1 fw-bold text-white">Cake Shop</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MENU & PRICING</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MASTER CHEFS</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">PAGES
-
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Our Service</a></li>
-                            <li><a class="dropdown-item" href="#">Testimonial</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-                <button class="btn btn-danger"><a href="#">Purchase</a></button>
-            </div>
+    <div class="fixed-top">
+        <div class="info-shop">
+            <marquee behavior="" direction="">Discount 30% with cake for Birthday</marquee>
         </div>
-    </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-birthday-cake fs-1 text-primary me-3 text-danger"></i>
+                    <span class="fs-1 fw-bold text-white">Cake Shop</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MENU & PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MASTER CHEFS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">PAGES
+
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Our Service</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <form class="">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass text-dark"></i>
+                    </form>
+                    <button class="btn btn-danger"><a href="#">Purchase</a></button>
+                </div>
+            </div>
+        </nav>
+    </div>
     <section class="section1 py-5">
         <div class="container-fluid">
             <div class="container py-5">
@@ -364,7 +373,8 @@
     <section class="section5 container-fluid py-5" id="section5">
         <div class="container">
             <div class="section5-order p-4 text-center text-white" id="section5-order">
-                <h3 class="fs-1 fw-border py-3"><span>30%</span> DISCOUNT FOR THIS SUMMER</h3>
+                <h1>Flash Sale</h1>
+                <h3 class="fs-1 fw-border py-3"><span class="text-danger">30%</span> DISCOUNT FOR THIS SUMMER</h3>
                 <button onclick="btnOrder()" class="btn btn-warning text-dark fw-bold">Order Now</button>
             </div>
             <div class="order-form text-center hidden" id="order-form">
@@ -440,11 +450,16 @@
             <div class="section7-introduct text-center">
                 <h3 class="text-warning py-3">Special Kombo Pack</h3>
                 <h1 class="fw-bold fs-1 ">SUPPER CRISPY CAKES</h1>
-                <P class="">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at
-                    dolor justo
-                    ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut
-                    dolores magna sit. Sea dolore sed et.</P>
-                <button class="btn btn-dark btn-outline-light ">Read Now</button>
+                <button class="btn btn-dark btn-outline-light " id="read-now">Read Now</button>
+            </div>
+            <div class="section7-info text-center hidden">
+                <button class="btn button-close" onclick="closeButton2()">
+                    <i class="fa fa-times fs-1 text-white"></i>
+                </button>
+                Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at
+                dolor justo
+                ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut
+                dolores magna sit. Sea dolore sed et.
             </div>
         </div>
     </section>
@@ -490,6 +505,69 @@
             </div>
         </div>
     </section>
+    <section class="section10 container-fluid py-5">
+        <div class="container">
+            <div class="introduct">
+                <h3 class="text-dark">Testimonial</h3>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./img/user1.jpg" alt="">
+                </div>
+                <div class="card-body text-dark">
+                    <h3 class="text-warning">Full Name</h3>
+                    <p class="text-dark">Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</p>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-dark"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./img/user2.jpg" alt="">
+                </div>
+                <div class="card-body text-dark">
+                    <h3 class="text-warning">Full Name</h3>
+                    <p class="text-dark">Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</p>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-dark"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./img/user3.png" alt="">
+                </div>
+                <div class="card-body text-dark">
+                    <h3 class="text-warning">Full Name</h3>
+                    <p class="text-dark">Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</p>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="./img/user4.png" alt="">
+                </div>
+                <div class="card-body text-dark">
+                    <h3 class="text-warning">Full Name</h3>
+                    <p class="text-dark">Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</p>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-warning"></i>
+                    <i class="fa-sharp fa-solid fa-star text-dark"></i>
+                    <i class="fa-sharp fa-solid fa-star text-dark"></i>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section9 container-fluid py-5 bg-dark">
         <div class="container">
             <div class="section9-content-1 bg-warning text-center py-5">
@@ -519,9 +597,11 @@
                     <h3 class="fs-1 text-warning py-3 fw-bold">QUICK LINKS</h3>
                     <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Home</a></p>
                     <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> About Us</a></p>
-                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Menu & Pricing</a>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Menu &
+                            Pricing</a>
                     </p>
-                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Master Chef</a></p>
+                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Master Chef</a>
+                    </p>
                     <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Pages</a></p>
                     <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Contact</a></p>
                 </div>

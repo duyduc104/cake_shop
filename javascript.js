@@ -121,4 +121,13 @@ imgChef3.addEventListener('click', () => {
     memberContact2.classList.remove('show');
 })
 
-// section8 
+// section7 close button
+var readNow = document.getElementById('read-now');
+readNow.addEventListener('click', () => {
+    document.querySelector('.section7-introduct').classList.add('non-show');
+    document.querySelector('.section7-info').classList.remove('hidden');
+})
+function closeButton2() {
+    document.querySelector('.section7-introduct').classList.remove('non-show');
+    document.querySelector('.section7-info').classList.add('hidden');
+}
