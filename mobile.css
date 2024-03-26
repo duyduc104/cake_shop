@@ -21,6 +21,11 @@ body {
     outline: none;
 }
 
+.navbar .navbar-nav .dropdown-menu {
+    outline: none;
+    border: none;
+}
+
 .navbar .nav-item {
     padding: 0 20px;
 }
@@ -60,7 +65,7 @@ body {
 
 .section1 {
     position: relative;
-    background: url(./img/hero.jpg) no-repeat right top;
+    background: url(./img/hero.jpg) no-repeat right center;
     border-radius: 10px;
     margin-top: 10%;
 }
@@ -93,8 +98,16 @@ body {
     padding: 20px;
 }
 
+.section1 h1:first-child {
+    font-family: 'Pacifico', 'cursive';
+}
+
 .section2-img img {
     width: 100%;
+}
+
+.section2 span {
+    font-family: 'Pacifico', 'cursive';
 }
 
 .section2 .content-introduct b {
@@ -140,6 +153,10 @@ body {
 
 .section4 {
     width: 100%;
+}
+
+.section4 .title h3 {
+    font-family: 'Pacifico', 'cursive';
 }
 
 .section4 .title-link {
@@ -230,6 +247,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     color: #d83c3c;
+    font-family: 'Pacifico', 'cursive';
 }
 
 .section5 .section5-order span {
@@ -286,6 +304,10 @@ body {
     width: 100%;
 }
 
+.section6 .section6-introduct h3 {
+    font-family: 'Pacifico', 'cursive';
+}
+
 .section6 .section6-member {
     padding: 40px 0;
 }
@@ -335,6 +357,8 @@ body {
 
 .section7-introduct h3 {
     font-size: 25px;
+    font-weight: 600;
+    font-family: 'Pacifico', 'cursive';
 }
 
 .section7-introduct h1 {
@@ -390,6 +414,10 @@ body {
 
 .section8 .progress {
     height: 20%;
+}
+
+.section8 .section8-introduct h3 {
+    font-family: 'Pacifico', 'cursive';
 }
 
 .section8 .progress-bar {
@@ -469,6 +497,19 @@ body {
     /* End width */
 }
 
+.section8-yourfeedback h3 {
+    font-family: 'Pacifico', 'cursive';
+}
+
+.section8-yourfeedback i {
+    transition: 0.5s;
+}
+
+.section8-yourfeedback i:hover {
+    transform: scale(1.5);
+    color: #E88F2A;
+}
+
 .section9 .section9-content-1 {
     border-radius: 10px;
 }
@@ -509,7 +550,9 @@ body {
 .section9 .section9-content-4 button {
     transition: 0.25s;
 }
-
+.section9 .section9-content-4 input{
+    width: 100%;
+}
 .section9 .section9-content-4 p {
     font-size: 15px;
 }
@@ -546,4 +589,12 @@ body {
 
 .section10 .card img {
     padding: 10px 0;
+}
+
+.section10 i {
+    transition: 0.5s;
+}
+
+.section10 i:hover {
+    transform: scale(1.3);
 }

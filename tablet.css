@@ -357,6 +357,11 @@
         background-color: white;
     }
 
+    .section7 .section7-info {
+        width: 60%;
+        left: 20%;
+    }
+
     .section8 .container {
         width: 100%;
         background-color: #000000;
@@ -492,6 +497,10 @@
 
     .section9 .section9-content-4 p {
         font-size: 15px;
+    }
+
+    .section9 .section9-content-4 input {
+        width: 70%;
     }
 
     .section9 .section9-content-4 button:hover {

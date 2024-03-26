@@ -1,4 +1,16 @@
 @media only screen and (min-width: 1367px) {
+    .back-to-top {
+        width: 4%;
+        height: 8%;
+        opacity: 0.5;
+    }
+
+    .fixed-bottom1 {
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+
     .navbar-collapse {
         position: relative;
     }
@@ -16,8 +28,16 @@
     .navbar-collapse form input {
         width: 500px;
     }
+
     .section1 .container-fuild {
         padding: 30px 0;
+    }
+
+    .section1 {
+        position: relative;
+        background: url(./img/hero.jpg) no-repeat right top;
+        border-radius: 10px;
+        margin-top: 10%;
     }
 
     .section2-img img {
@@ -30,9 +50,13 @@
     }
 
     .section2 .section2-introduct span {
-        font-size: 30px;
+        font-size: 60px;
         font-weight: 600;
 
+    }
+
+    .section2 .carousel-item img {
+        border-radius: 20px;
     }
 
     .section2 .section2-introduct h1 {
@@ -41,7 +65,7 @@
     }
 
     .section2 .section2-introduct {
-        padding: 40px 0 30px 0;
+        padding: 40px 0 40px 0;
     }
 
     .section2 .content-introduct b {
@@ -53,17 +77,29 @@
         font-size: 20px;
     }
 
+    .section2 .content-introduct {
+        padding: 40px 0 40px 0;
+        background-color: #f3eaea;
+        border-radius: 20px;
+    }
+
+
     .section2 .content-benefit {
         display: flex;
-
     }
 
     .section2 .content-benefit .heart {
-        padding-right: 20px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f3eaea;
+        border-radius: 20px;
     }
 
     .section2 .content-benefit .award-winning {
-        padding-left: 20px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f3eaea;
+        border-radius: 20px;
     }
 
     .section2 .content-benefit i {
@@ -93,12 +129,12 @@
     }
 
     .section3 .content {
-        padding: 10px;
+        padding: 10px 20px;
     }
 
     .section3 .content i {
         padding: 10px 30px 10px 0;
-        font-size: 30px;
+        font-size: 60px;
     }
 
     .section3 .content b {
@@ -106,7 +142,7 @@
     }
 
     .section3 .content p {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 600;
     }
 
@@ -116,12 +152,12 @@
     }
 
     .section4 .title h3 {
-        font-size: 30px;
+        font-size: 50px;
         font-weight: 600;
     }
 
     .section4 .title b {
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 700;
     }
 
@@ -142,6 +178,13 @@
     .section4 .title-link a:hover {
         background-color: #E88F2A;
         padding: 5px;
+        border-radius: 20px;
+    }
+
+    .section4 .content {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
     }
 
     .section4 .content #tab-1 .detail {
@@ -213,6 +256,10 @@
         background: url(./img/bg.jpg);
     }
 
+    .section5 .section5-order h1 {
+        font-size: 60px;
+    }
+
     .section5 .section5-order span {
         font-size: 50px;
         color: red;
@@ -240,7 +287,7 @@
         padding: 20px;
         margin: 10px auto;
         background-color: #d83c3c;
-        width: 100%;
+        width: 20%;
     }
 
     .section5 .order-form .button-close {
@@ -267,15 +314,25 @@
         width: 100%;
     }
 
+    .section6 .section6-introduct h3 {
+        font-size: 60px;
+    }
+
+    .section6 .section6-introduct h1 {
+        font-size: 80px;
+    }
+
     .section6 .section6-member {
         padding: 40px 0;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .section6 .section6-member .member {
         width: 100%;
         background-color: #2B2825;
         border-radius: 10px;
-        margin: 30px 0;
+        margin: 30px 30px;
         position: relative;
     }
 
@@ -296,14 +353,14 @@
 
     .section6 .member .member-contact {
         position: absolute;
-        top: 20%;
+        top: 5%;
         left: 45%;
 
     }
 
     .section6 .member .member-contact i {
         color: #E88F2A;
-        font-size: 70px;
+        font-size: 40px;
         padding: 30px 0;
         cursor: pointer;
         transition: 0.5s;
@@ -315,11 +372,12 @@
     }
 
     .section7-introduct h3 {
-        font-size: 25px;
+        font-size: 50px;
     }
 
     .section7-introduct h1 {
-        font-size: 40px;
+        font-size: 60px;
+
     }
 
     .section7-introduct p {
@@ -338,6 +396,11 @@
         opacity: 0.7;
         color: black;
         background-color: white;
+    }
+
+    .section7 .section7-info {
+        width: 50%;
+        left: 25%;
     }
 
     .section8 .container {
@@ -427,6 +490,15 @@
         /* End width */
     }
 
+    .section8 .section8-introduct h3 {
+        font-size: 50px;
+    }
+
+    .section8-yourfeedback i {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
     .section9 .section9-content-1 {
         border-radius: 10px;
     }
@@ -436,7 +508,7 @@
     }
 
     .section9 .section9-content-1 p {
-        font-size: 12px;
+        font-size: 20px;
         padding: 10px;
     }
 
@@ -469,7 +541,13 @@
         justify-content: space-evenly;
     }
 
+    .section9 .section9-content-4 input {
+        width: 60%;
+        padding: auto;
+    }
+
     .section9 .section9-content-4 button {
+        width: 10%;
         transition: 0.25s;
     }
 
@@ -485,5 +563,13 @@
     .section9-content-5 {
         background-color: black;
         width: 100%;
+    }
+
+    .section10 .content {
+        display: flex;
+    }
+
+    .section10 .content .card {
+        margin: 0 20px;
     }
 }

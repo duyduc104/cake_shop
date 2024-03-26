@@ -131,3 +131,26 @@ function closeButton2() {
     document.querySelector('.section7-introduct').classList.remove('non-show');
     document.querySelector('.section7-info').classList.add('hidden');
 }
+
+
+// section8 start feedback
+var stars = document.querySelectorAll('.section8-yourfeedback .fa-star');
+
+stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        for (var i = 0; i < stars.length; i++) {
+            if (i <= index) {
+                stars[i].classList.add('text-warning');
+            } else {
+                stars[i].classList.remove('text-warning');
+            }
+        }
+        setTimeout(() => {
+            alert("Đánh giá thành công!");
+            // Reset stars to initial state (white color)
+            stars.forEach((star) => {
+                star.classList.remove('text-warning');
+            });
+        }, 3000); // 3 seconds delay
+    });
+});
