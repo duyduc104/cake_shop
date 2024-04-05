@@ -161,68 +161,7 @@
         padding: 5px;
     }
 
-    .section4 .content #tab-1 .detail {
-        padding: 10px;
-    }
-
-    .section4 .content #tab-1 img {
-        padding: 20px;
-        border-radius: 20px;
-
-    }
-
-    .section4 .content #tab-1 h3 {
-        color: #E88F2A;
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .section4 .content #tab-1 p {
-        color: gray;
-        font-size: 20px;
-    }
-
-    .section4 .content #tab-2 .detail {
-        padding: 10px;
-    }
-
-    .section4 .content #tab-2 img {
-        padding: 20px;
-        border-radius: 20px;
-
-    }
-
-    .section4 .content #tab-2 h3 {
-        color: #E88F2A;
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .section4 .content #tab-2 p {
-        color: gray;
-        font-size: 20px;
-    }
-
-    .section4 .content #tab-3 .detail {
-        padding: 10px;
-    }
-
-    .section4 .content #tab-3 img {
-        padding: 20px;
-        border-radius: 20px;
-
-    }
-
-    .section4 .content #tab-3 h3 {
-        color: #E88F2A;
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    .section4 .content #tab-3 p {
-        color: gray;
-        font-size: 20px;
-    }
+    
 
     .section5 {
         position: relative;
@@ -249,6 +188,7 @@
         border: none;
     }
 
+    
     .section5 .order-form {
         position: absolute;
         top: 50%;

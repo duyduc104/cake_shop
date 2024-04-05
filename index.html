@@ -47,11 +47,11 @@
         <div class="info-shop">
             <marquee behavior="" direction="">Discount 30% with cake for Birthday</marquee>
         </div>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg  bg-warning">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <i class="fa fa-birthday-cake fs-1 text-primary me-3 text-danger"></i>
-                    <span class="fs-1 fw-bold text-white">Cake Shop</span>
+                    <i class="fa fa-birthday-cake fs-1  me-3 text-dark"></i>
+                    <span class="fs-1 fw-bold text-dark">Cake Shop</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,13 +63,13 @@
                             <a class="nav-link active" aria-current="page" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="#section2">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MENU & PRICING</a>
+                            <a class="nav-link" href="#section4">MENU & PRICING</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MASTER CHEFS</a>
+                            <a class="nav-link" href="#section6">MASTER CHEFS</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -78,18 +78,18 @@
                             </a>
                             <ul class="dropdown-menu ">
                                 <li><a class="dropdown-item" href="#">Our Service</a></li>
-                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="#section10">Testimonial</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="#footer2">CONTACT</a>
                         </li>
                     </ul>
-                    <form class="">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form>
+                        <input id="searchBar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <i class="fa-sharp fa-solid fa-magnifying-glass text-dark"></i>
                     </form>
-                    <button class="btn btn-danger"><a href="#">Purchase</a></button>
+                    <button class="btn btn-danger" onclick="btnOrder()"><a href="#section5-order">Purchase</a></button>
                 </div>
             </div>
         </nav>
@@ -102,16 +102,15 @@
                     <h1 class="display-1 text-uppercase text-white mb-4 fw-bold">CakeZone</h1>
                     <h1 class="text-uppercase text-white fw-bold">The Best Cake In London</h1>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="" class="btn btn-dark py-3 px-5 me-5" previewlistener="true">Read
+                        <a href="" class="btn btn-warning text-white me-5" previewlistener="true">Read
                             More</a>
-                        <a href="https://www.youtube.com/watch?v=ad5_MXzibSM" class="btn-play"><i
-                                class="fa fa-play"></i></a>
+                        <a href="https://www.youtube.com/watch?v=HTXB6flODww" class="btn-play"><i class="fa fa-play"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section2 container-fluid py-5">
+    <section class="section2 container-fluid py-5" id="section2">
         <div class="container">
             <div class="section2-introduct text-center text-dark">
                 <span class="text-warning">About Us</span>
@@ -214,7 +213,7 @@
             </div>
         </div>
     </section>
-    <section class="section4 container-fluid py-5">
+    <section class="section4 container-fluid py-5" id="section4">
         <div class="title container text-center py-4">
             <h3 class="text-warning">Menu & Pricing</h3>
             <h1><b class="text-dark">EXPLORE OUR CAKES</b></h1>
@@ -228,153 +227,258 @@
             </div>
         </div>
         <div class="content">
-            <div id="tab-1" class="hidden">
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-1.jpg" alt="">
+            <div id="tab-1" class="hidden">>
+                <div class="detail" id="cake-1">
+                    <div class="d-flex" id="cake-1-content">
+                        <div>
+                            <img src="./img/cake-1.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
-                    </div>
-                </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-1.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-1">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-1.jpg" alt="">
+                <div class="detail" id="cake-2">
+                    <div class="d-flex" id="cake-2-content">
+                        <div>
+                            <img src="./img/cake-1.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
-                    </div>
-                </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-1.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-2">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button class=" priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-1.jpg" alt="">
+                <div class="detail" id="cake-3">
+                    <div class="d-flex" id="cake-3-content">
+                        <div>
+                            <img src="./img/cake-1.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
-                    </div>
-                </div>
-            </div>
-            <div id="tab-2" class="hidden">
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-2.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-3">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-2.jpg" alt="">
+                <div class="detail" id="cake-4">
+                    <div class="d-flex" id="cake-4-content">
+                        <div>
+                            <img src="./img/cake-1.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
-                    </div>
-                </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-2.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-4">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-2.jpg" alt="">
+                <div class="detail" id="cake-5">
+                    <div class="d-flex" id="cake-5-content">
+                        <div>
+                            <img src="./img/cake-1.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
-                    </div>
-                </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-2.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-5">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
             </div>
-            <div id="tab-3" class="hidden">
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-3.jpg" alt="">
+            <div id="tab-2" class="hidden">>
+                <div class="detail" id="cake-1">
+                    <div class="d-flex" id="cake-1-content">
+                        <div>
+                            <img src="./img/cake-2.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
-                    </div>
-                </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-3.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-1">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-3.jpg" alt="">
+                <div class="detail" id="cake-2">
+                    <div class="d-flex" id="cake-2-content">
+                        <div>
+                            <img src="./img/cake-2.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
-                    </div>
-                </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-3.jpg" alt="">
-                    </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-2">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button class=" priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
-                <div class="detail d-flex">
-                    <div>
-                        <img src="./img/cake-3.jpg" alt="">
+                <div class="detail" id="cake-3">
+                    <div class="d-flex" id="cake-3-content">
+                        <div>
+                            <img src="./img/cake-2.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
                     </div>
-                    <div>
-                        <h3>BIRTHDAY CAKE</h3>
-                        <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                    <div class="price text-center hidden" id="price-3">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
+                    </div>
+                </div>
+                <div class="detail" id="cake-4">
+                    <div class="d-flex" id="cake-4-content">
+                        <div>
+                            <img src="./img/cake-2.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
+                    </div>
+                    <div class="price text-center hidden" id="price-4">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
+                    </div>
+                </div>
+                <div class="detail" id="cake-5">
+                    <div class="d-flex" id="cake-5-content">
+                        <div>
+                            <img src="./img/cake-2.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
+                    </div>
+                    <div class="price text-center hidden" id="price-5">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
+                    </div>
+                </div>
+            </div>
+            <div id="tab-3" class="hidden">>
+                <div class="detail" id="cake-1">
+                    <div class="d-flex" id="cake-1-content">
+                        <div>
+                            <img src="./img/cake-3.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
+                    </div>
+                    <div class="price text-center hidden" id="price-1">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
+                    </div>
+                </div>
+                <div class="detail" id="cake-2">
+                    <div class="d-flex" id="cake-2-content">
+                        <div>
+                            <img src="./img/cake-3.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
+                    </div>
+                    <div class="price text-center hidden" id="price-2">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button class=" priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
+                    </div>
+                </div>
+                <div class="detail" id="cake-3">
+                    <div class="d-flex" id="cake-3-content">
+                        <div>
+                            <img src="./img/cake-3.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
+                    </div>
+                    <div class="price text-center hidden" id="price-3">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
+                    </div>
+                </div>
+                <div class="detail" id="cake-4">
+                    <div class="d-flex" id="cake-4-content">
+                        <div>
+                            <img src="./img/cake-3.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
+                    </div>
+                    <div class="price text-center hidden" id="price-4">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button  class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
+                    </div>
+                </div>
+                <div class="detail" id="cake-5">
+                    <div class="d-flex" id="cake-5-content">
+                        <div>
+                            <img src="./img/cake-3.jpg" alt="" height="">
+                        </div>
+                        <div>
+                            <h3>BIRTHDAY CAKE</h3>
+                            <P>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</P>
+                        </div>
+                    </div>
+                    <div class="price text-center hidden" id="price-5">
+                        <p class="text-danger fs-1 fw-bold">$25</p>
+                        <button class="priceButton btn btn-warning"><a href="#section5">Order
+                            Now</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section5 container-fluid py-5" id="section5">
+    <section class="section5 container-fluid" id="section5">
         <div class="container">
-            <div class="section5-order p-4 text-center text-white" id="section5-order">
-                <h1>Flash Sale</h1>
+            <div class="section5-order  p-4 text-center text-white" id="section5-order">
+                <h1 class="text-warning">Flash Sale</h1>
                 <h3 class="fs-1 fw-border py-3"><span class="text-danger">30%</span> DISCOUNT FOR THIS SUMMER</h3>
                 <button onclick="btnOrder()" class="btn btn-warning text-dark fw-bold">Order Now</button>
             </div>
@@ -388,13 +492,13 @@
                         <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="phone" class="form-control" placeholder="Your Phone" required>
+                        <input type="text" id="phone" class="form-control" placeholder="Your Phone" required maxlength="10" minlength="9" oninput="validatePhone(this)">
                     </div>
                     <div class="form-group">
                         <input type="text" id="address" class="form-control" placeholder="Your Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cake" class="form-control" placeholder="Cake Order" required>
                     </div>
                     <div class="form-group">
                         <button type="submit" onclick="submitButton()" class="btn btn-success text-dark fw-bold">Order
@@ -406,7 +510,7 @@
             </div>
         </div>
     </section>
-    <section class="section6 container-fluid py-5">
+    <section class="section6 container-fluid py-5" id="section6">
         <div class="container">
             <div class="section6-introduct text-center text-dark py-5">
                 <h3 class="text-warning">Team Member</h3>
@@ -514,10 +618,10 @@
             </div>
         </div>
     </section>
-    <section class="section10 container-fluid py-5">
+    <section class="section10 container-fluid py-5" id="section10">
         <div class="container">
             <div class="introduct">
-                <h3 class="text-dark">Testimonial</h3>
+                <h3 class="text-warning">Testimonial</h3>
             </div>
             <div class="content">
                 <div class="card">
@@ -611,21 +715,24 @@
                 <div class="section9-content-3 py-3">
                     <h3 class="fs-1 text-warning py-3 fw-bold">QUICK LINKS</h3>
                     <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Home</a></p>
-                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> About Us</a></p>
-                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Menu &
+                    <p class="py-1"><a href="#section2"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> About
+                            Us</a></p>
+                    <p class="py-1"><a href="#section4"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Menu &
                             Pricing</a>
                     </p>
-                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Master Chef</a>
+                    <p class="py-1"><a href="#section6"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Master
+                            Chef</a>
                     </p>
                     <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Pages</a></p>
-                    <p class="py-1"><a href="#"><i class="fa-sharp fa-solid fa-arrow-right-long "></i> Contact</a></p>
+                    <p class="py-1"><a href="#footer2"><i class="fa-sharp fa-solid fa-arrow-right-long "></i>
+                            Contact</a></p>
                 </div>
             </div>
             <div class="section9-content-4 py-5 text-center">
                 <h3 class="text-warning py-3 fw-bold">NEWSLETTER</h3>
-                <p class="">Enter your email to get the latest news and offers.</p>
+                <p class="">Enter your phone to get the latest news and offers.</p>
                 <form>
-                    <input type="email" name="" id="" placeholder="Email Address" class="text-dark"><br>
+                    <input type="text" name="" id="phone-footer" placeholder="Your Phone" class="text-dark"><br>
                     <button type="submit" onclick="btnOrder()" class="btn btn-warning mt-3"><a href="#section5">Order
                             Now</a></button>
                 </form>

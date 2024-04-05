@@ -17,7 +17,7 @@ body {
 
 
 .navbar {
-    background-color: #0dcaf0;
+
     outline: none;
 }
 
@@ -70,10 +70,15 @@ body {
     margin-top: 10%;
 }
 
-.section1 .btn-dark {
-    border: 5px solid black;
+.section1 .btn-warning {
+    transition: 0.5s;
     outline: none;
     font-weight: 600;
+    padding: 18px 25px;
+}
+
+.section1 .btn-warning:hover {
+    transform: scale(1.2);
 }
 
 .section1 .btn-play {
@@ -83,7 +88,7 @@ body {
 .section1 .btn-play:hover {
     outline: none;
     border: none;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .section1 .btn-play i {
@@ -104,9 +109,12 @@ body {
 
 .section2-img img {
     width: 100%;
+    border-radius: 10px;
 }
 
+
 .section2 span {
+    font-size: 30px;
     font-family: 'Pacifico', 'cursive';
 }
 
@@ -140,6 +148,11 @@ body {
 .section3 .content i {
     padding: 10px 30px 10px 0;
     font-size: 30px;
+    transition: 0.5s;
+}
+
+.section3 .content i:hover {
+    transform: scale(1.2);
 }
 
 .section3 .content b {
@@ -175,21 +188,29 @@ body {
 .section4 .title-link a:hover {
     background-color: #E88F2A;
     padding: 5px;
+    border-radius: 20px;
 }
 
 .section4 .content #tab-1 .detail {
-    padding: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.section4 .content #tab-1 .price {
+    position: absolute;
+    top: 10%;
+    left: 40%;
 }
 
 .section4 .content #tab-1 img {
     padding: 5px;
     border-radius: 10px;
-
+    position: relative;
 }
 
 .section4 .content #tab-1 h3 {
     color: #E88F2A;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -197,19 +218,30 @@ body {
     color: gray;
 }
 
+.section4 .content #tab-1 .text-danger {
+    font-size: 25px;
+}
+
 .section4 .content #tab-2 .detail {
-    padding: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.section4 .content #tab-2 .price {
+    position: absolute;
+    top: 10%;
+    left: 40%;
 }
 
 .section4 .content #tab-2 img {
     padding: 5px;
     border-radius: 10px;
-
+    position: relative;
 }
 
 .section4 .content #tab-2 h3 {
     color: #E88F2A;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -217,19 +249,30 @@ body {
     color: gray;
 }
 
+.section4 .content #tab-2 .text-danger {
+    font-size: 25px;
+}
+
 .section4 .content #tab-3 .detail {
-    padding: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.section4 .content #tab-3 .price {
+    position: absolute;
+    top: 10%;
+    left: 40%;
 }
 
 .section4 .content #tab-3 img {
     padding: 5px;
     border-radius: 10px;
-
+    position: relative;
 }
 
 .section4 .content #tab-3 h3 {
     color: #E88F2A;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -237,7 +280,12 @@ body {
     color: gray;
 }
 
+.section4 .content #tab-3 .text-danger {
+    font-size: 25px;
+}
+
 .section5 {
+    padding: 40px 0;
     position: relative;
     width: 100%;
     background: url(./img/bg.jpg);
@@ -269,15 +317,22 @@ body {
     border: none;
 }
 
+
+.section5 .section5-img img:hover {
+    transform: scale(1.1);
+}
+
+
 .section5 .order-form {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
     margin: 10px auto;
     background-color: #d83c3c;
     width: 100%;
+    border-radius: 10px;
 }
 
 .section5 .order-form .button-close {
@@ -292,6 +347,10 @@ body {
 .section5 .order-form .button-close :hover {
     transform: scale(0.8);
     opacity: 0.7;
+}
+
+.section5 .order-form button {
+    margin: 10px;
 }
 
 .section5 .order-form input {
@@ -503,6 +562,7 @@ body {
 
 .section8-yourfeedback i {
     transition: 0.5s;
+    padding: 0 10px;
 }
 
 .section8-yourfeedback i:hover {
@@ -550,9 +610,11 @@ body {
 .section9 .section9-content-4 button {
     transition: 0.25s;
 }
-.section9 .section9-content-4 input{
+
+.section9 .section9-content-4 input {
     width: 100%;
 }
+
 .section9 .section9-content-4 p {
     font-size: 15px;
 }
@@ -579,6 +641,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     padding: 20px 0;
+    font-family: 'Pacifico', 'cursive';
 }
 
 .section10 .card {

@@ -79,7 +79,7 @@
 
     .section2 .content-introduct {
         padding: 40px 0 40px 0;
-        background-color: #f3eaea;
+        /* background-color: #f3eaea; */
         border-radius: 20px;
     }
 
@@ -91,14 +91,14 @@
     .section2 .content-benefit .heart {
         margin: 20px;
         padding: 20px;
-        background-color: #f3eaea;
+        /* background-color: #f3eaea; */
         border-radius: 20px;
     }
 
     .section2 .content-benefit .award-winning {
         margin: 20px;
         padding: 20px;
-        background-color: #f3eaea;
+        /* background-color: #f3eaea; */
         border-radius: 20px;
     }
 
@@ -184,17 +184,14 @@
     .section4 .content {
         display: flex;
         justify-content: center;
-        padding-top: 40px;
+        padding-top: 10px;
     }
 
-    .section4 .content #tab-1 .detail {
-        padding: 10px;
-    }
+    .section4 .content #tab-1 .detail {}
 
-    .section4 .content #tab-1 img {
-        padding: 20px;
+    .section4 .content #tab-1 .detail img {
+        padding: 0 20px;
         border-radius: 20px;
-
     }
 
     .section4 .content #tab-1 h3 {
@@ -208,14 +205,11 @@
         font-size: 20px;
     }
 
-    .section4 .content #tab-2 .detail {
-        padding: 10px;
-    }
+    .section4 .content #tab-2 .detail {}
 
-    .section4 .content #tab-2 img {
-        padding: 20px;
+    .section4 .content #tab-2 .detail img {
+        padding: 0 20px;
         border-radius: 20px;
-
     }
 
     .section4 .content #tab-2 h3 {
@@ -228,15 +222,11 @@
         color: gray;
         font-size: 20px;
     }
+    .section4 .content #tab-3 .detail {}
 
-    .section4 .content #tab-3 .detail {
-        padding: 10px;
-    }
-
-    .section4 .content #tab-3 img {
-        padding: 20px;
+    .section4 .content #tab-3 .detail img {
+        padding: 0 20px;
         border-radius: 20px;
-
     }
 
     .section4 .content #tab-3 h3 {
@@ -249,8 +239,8 @@
         color: gray;
         font-size: 20px;
     }
-
     .section5 {
+        padding: 100px 0;
         position: relative;
         width: 100%;
         background: url(./img/bg.jpg);
@@ -261,7 +251,7 @@
     }
 
     .section5 .section5-order span {
-        font-size: 50px;
+        font-size: 90px;
         color: red;
     }
 
@@ -269,6 +259,7 @@
         transition: 0.5s;
         outline: none;
         border: none;
+
     }
 
     .section5 .section5-order button:hover {
@@ -280,29 +271,39 @@
     }
 
     .section5 .order-form {
+        border-radius: 10px;
         position: absolute;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
         padding: 20px;
         margin: 10px auto;
         background-color: #d83c3c;
-        width: 20%;
+        height: 75%;
+        width: 50%;
     }
 
     .section5 .order-form .button-close {
         position: absolute;
-        top: 10px;
-        right: 15px;
+        top: 0px;
+        right: 0px;
         outline: none;
         border: none;
         transition: 0.5s;
+        font-size: 15px;
     }
 
     .section5 .order-form .button-close :hover {
-        transform: scale(0.8);
+        transform: scale(1.2);
         opacity: 0.7;
     }
+
+    .section5 .section5-img img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+
+
 
     .section5 .order-form input {
         margin: 5px auto;
@@ -495,7 +496,7 @@
     }
 
     .section8-yourfeedback i {
-        padding-top: 20px;
+        padding: 20px 10px;
         font-size: 30px;
     }
 
@@ -571,5 +572,9 @@
 
     .section10 .content .card {
         margin: 0 20px;
+    }
+
+    .section10 .introduct h3 {
+        font-size: 50px;
     }
 }

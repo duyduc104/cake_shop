@@ -1,3 +1,47 @@
+//section1
+var product1 = "Birthday Cake";
+var product2 = "Wedding Cake";
+var product3 = "Custom Cake";
+
+function findProducts(keySearch) {
+    // Convert product names and search term to lowercase for case-insensitive comparison
+    var product1Lower = product1.toLowerCase();
+    var product2Lower = product2.toLowerCase();
+    var product3Lower = product3.toLowerCase();
+    keySearch = keySearch.toLowerCase();
+
+    if (product1Lower.includes(keySearch)) {
+            document.getElementById('tab-2').classList.add('hidden');
+            document.getElementById('tab-3').classList.add('hidden');
+            document.getElementById('tab-1').classList.remove('hidden');
+            return;
+    } else if (product2Lower.includes(keySearch)) {
+            document.getElementById('tab-1').classList.add('hidden');
+            document.getElementById('tab-3').classList.add('hidden');
+            document.getElementById('tab-2').classList.remove('hidden');
+            return;
+    } else if (product3Lower.includes(keySearch)) {
+            document.getElementById('tab-1').classList.add('hidden');
+            document.getElementById('tab-2').classList.add('hidden');
+            document.getElementById('tab-3').classList.remove('hidden');
+            return;
+    } else {
+        console.log("No matching product found");
+    }
+}
+
+var searchBar = document.getElementById('searchBar');
+searchBar.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        window.location.href = '#section4';
+    }
+});
+searchBar.addEventListener('input', () => {
+    findProducts(searchBar.value); // Pass the search term directly
+});
+
+
+
 // // section3 
 // // Lấy phần tử mà bạn muốn số chạy
 // var experienceCountElement = document.getElementById('experienceCount');
@@ -49,36 +93,144 @@ document.getElementById('link-custom').addEventListener('click', () => {
 // }
 
 //
+
+// section4
+document.querySelectorAll('.detail .d-flex').forEach((content) => {
+    const price = content.nextElementSibling;
+
+    content.addEventListener('click', () => {
+        content.classList.add('non-show');
+        price.classList.remove('hidden');
+        price.classList.add('show');
+    });
+});
+document.querySelectorAll('.detail .d-flex').forEach((content) => {
+    const price = content.nextElementSibling;
+
+    content.addEventListener('click', () => {
+        // Hide all prices
+        document.querySelectorAll('.price').forEach((p) => {
+            p.classList.add('hidden');
+            p.classList.remove('show');
+        });
+
+        // Show price of current detail
+        price.classList.remove('hidden');
+        price.classList.add('show');
+    });
+    
+});
+document.querySelectorAll('.priceButton').forEach((button) => {
+    button.addEventListener('click', (event) => {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Call btnOrder() function
+        btnOrder();
+
+        // Hide the price
+        const price = event.target.closest('.price');
+        if (price) {
+            price.classList.add('hidden');
+        }
+
+        // Show the corresponding detail
+        const detail = price.previousElementSibling;
+        if (detail) {
+            detail.classList.remove('hidden');
+            detail.classList.add('show');
+        }
+        window.location.href = '#section5';
+    });
+});
+
+
+
+// document.querySelectorAll('.detail .d-flex').forEach((detail) => {
+//     const content = document.querySelectorAll('.detail .d-flex');
+//     const price = detail.querySelector('.price');
+//     const priceButton = detail.querySelector('.priceButton');
+
+//     content.addEventListener('click', () => {
+//         content.classList.add('non-show');
+//         price.classList.remove('hidden');
+//         price.classList.add('show');
+//     });
+
+//     priceButton.addEventListener('click', (event) => {
+//         event.stopPropagation(); // Prevent the click event from bubbling up to the content
+//         content.classList.remove('non-show');
+//         price.classList.add('hidden');
+//         price.classList.remove('show');
+//     });
+
+//     detail.addEventListener('click', () => {
+//         document.querySelectorAll('.detail').forEach((otherDetail) => {
+//             if (otherDetail !== detail) {
+//                 const otherContent = otherDetail.querySelector('.d-flex');
+//                 const otherPrice = otherDetail.querySelector('.price');
+//                 otherContent.classList.remove('non-show');
+//                 otherPrice.classList.add('hidden');
+//                 otherPrice.classList.remove('show');
+//             }
+//         });
+//     });
+// });
+
+// form
 var section5Order = document.getElementById('section5-order');
 var orderForm = document.getElementById('order-form');
+
 function btnOrder() {
     section5Order.classList.add('non-show');
     orderForm.classList.remove('hidden');
     orderForm.classList.add('show');
-
 }
 
 function closeButton() {
-    section5Order.classList.remove('non-show');
+    orderForm.classList.remove('show');
     orderForm.classList.add('hidden');
+    section5Order.classList.remove('non-show');
+    section5Order.classList.add('show');
 }
 function submitButton() {
     var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
     var phone = document.getElementById('phone').value;
     var address = document.getElementById('address').value;
-    if (name == '' || email == '' || phone == '' || address == '') {
+    var cake = document.getElementById('cake').value;
+
+    // Phone number pattern to validate
+    var phonePattern = /^0[0-9]{9}$/;
+
+    if (name == '' || phone == '' || address == '' || cake == '') {
         alert("Please fill out all fields.");
         document.getElementById('name').focus();
-        document.getElementById('email').focus();
+        document.getElementById('name').style.border = '5px solid yellow';
+        document.getElementById('cake').focus();
+        document.getElementById('cake').style.border = '5px solid yellow';
         document.getElementById('phone').focus();
+        document.getElementById('phone').style.border = '5px solid yellow';
         document.getElementById('address').focus();
-        return false; // Ngăn form submit nếu có input rỗng
-    }
+        document.getElementById('address').style.border = '5px solid yellow';
+        return false; // Prevent form submission if there are empty inputs
+    } 
     else {
-        alert('Đặt hàng thành công.CakeShop sẽ liên hệ với bạn sớm nhất');
+        alert('Đặt hàng thành công. CakeShop sẽ liên hệ với bạn sớm nhất.');
+        return true; // Allow form submission if all validations pass
     }
 }
+// enter phone
+function validatePhone(input) {
+    // Remove non-numeric characters except the first 0
+    input.value = input.value.replace(/\D/g, '');
+
+    // Ensure the phone number starts with 0
+    if (input.value.length > 0 && input.value.charAt(0) !== '0') {
+        input.value = '0' + input.value.substring(1);
+    }
+}
+
+
 
 // img-member-chef
 var imgChef1 = document.getElementById('img-chef1');
@@ -151,6 +303,51 @@ stars.forEach((star, index) => {
             stars.forEach((star) => {
                 star.classList.remove('text-warning');
             });
-        }, 3000); // 3 seconds delay
+        }, 500); // 3 seconds delay
     });
 });
+
+
+// carousel 2s doi anh
+document.addEventListener("DOMContentLoaded", function () {
+    // Set the interval for changing the carousel image every 2 seconds
+    setInterval(function () {
+        // Select the carousel element
+        let carousel = document.getElementById('carouselExample');
+        // Trigger the 'next' button click event to move to the next slide
+        carousel.querySelector('.carousel-control-next').click();
+    }, 2000); // Change image every 2 seconds
+});
+
+
+
+// email footer
+function phoneFooterToPhoneOrder() {
+    var phoneFooterInput = document.getElementById('phone-footer');
+    var orderForm = document.getElementById('order-form');
+    var phoneInput = document.getElementById('phone');
+    var section5Order = document.getElementById('section5-order');
+    // Get the trimmed value of the phone-footer input
+    var phoneValue = phoneFooterInput.value.trim();
+
+    // Remove the hidden class from the order-form
+    orderForm.classList.remove('hidden');
+    section5Order.classList.add('non-show');
+    phoneInput.value = phoneValue;
+}
+
+// Add an event listener to the email-footer input for keyup event
+document.getElementById('phone-footer').addEventListener('keyup', function (event) {
+    // Check if Enter key is pressed
+    if (event.key === 'Enter') {
+        // Prevent the default form submission
+        event.preventDefault();
+        // Call the function to handle the phone
+        phoneFooterToPhoneOrder();
+    }
+});
+
+function btnOrder() {
+    // Call the function to handle the email
+    phoneFooterToPhoneOrder();
+}
