@@ -40,6 +40,11 @@ searchBar.addEventListener('input', () => {
     findProducts(searchBar.value); // Pass the search term directly
 });
 
+// var searchIcon = document.getElementById('searchIcon');
+// searchIcon.addEventListener('click', (event) => {
+//     findProducts(searchBar.value);
+// })
+
 
 
 // // section3 
