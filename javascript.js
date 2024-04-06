@@ -26,19 +26,19 @@ function findProducts(keySearch) {
             document.getElementById('tab-3').classList.remove('hidden');
             return;
     } else {
-        console.log("No matching product found");
+        alert("Not found");
     }
 }
 
 var searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        window.location.href = '#section4';
+        findProducts(searchBar.value);
     }
 });
-searchBar.addEventListener('input', () => {
-    findProducts(searchBar.value); // Pass the search term directly
-});
+// searchBar.addEventListener('input', () => {
+//     findProducts(searchBar.value); // Pass the search term directly
+// });
 
 // var searchIcon = document.getElementById('searchIcon');
 // searchIcon.addEventListener('click', (event) => {
