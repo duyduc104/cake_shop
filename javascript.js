@@ -132,7 +132,11 @@ document.querySelectorAll('.priceButton').forEach((button) => {
 
         // Call btnOrder() function
         btnOrder();
-
+        // document.querySelectorAll('detail .d-flex').forEach((content) => {
+        //     price.classList.remove('show');
+        //     content.classList.add('non-show');
+        //     price.classList.add('hidden');
+        // }
         // Hide the price
         const price = event.target.closest('.price');
         if (price) {
