@@ -33,12 +33,12 @@ function findProducts(keySearch) {
 var searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        findProducts(searchBar.value);
+        window.location.href = '#section4';
     }
 });
-// searchBar.addEventListener('input', () => {
-//     findProducts(searchBar.value); // Pass the search term directly
-// });
+searchBar.addEventListener('input', () => {
+    findProducts(searchBar.value); // Pass the search term directly
+});
 
 // var searchIcon = document.getElementById('searchIcon');
 // searchIcon.addEventListener('click', (event) => {
